@@ -1,0 +1,10 @@
+{
+    "verbose": false,
+    "watch": [
+      "./server"
+    ],
+    "exec": "NODE_OPTIONS=\"--openssl-legacy-provider\" webpack --mode=development --config webpack.config.server.js && NODE_OPTIONS=\"--openssl-legacy-provider\" node ./dist/server.generated.js",
+    "env": {
+        "NODE_OPTIONS": "--openssl-legacy-provider"
+    }
+}
